@@ -36,7 +36,7 @@ namespace TC.BrowserStack.Screenshots
                 response = web.UploadString(url, "POST", json);
             }
 
-            value = Json.Deserialize<responseT>(json);
+            value = Json.Deserialize<responseT>(response);
 
             return value;
         }

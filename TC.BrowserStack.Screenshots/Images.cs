@@ -26,7 +26,7 @@ namespace TC.BrowserStack.Screenshots
 
             foreach(JobLogModel job in runLog.jobLogs)
             {
-                Console.WriteLine(job.screenshots[0].url);
+                Console.WriteLine(removeDomain(job.screenshots[0].url));
                 waitForAllDone(job.job_id);
                 downloadImages(job.job_id);
             }

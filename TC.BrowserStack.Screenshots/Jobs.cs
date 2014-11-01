@@ -43,6 +43,8 @@ namespace TC.BrowserStack.Screenshots
             RunLogModel runLog = new RunLogModel();
             runLog.jobLogs = jobLogs.ToArray();
 
+            Console.WriteLine(path);
+
             JsonFile.WriteObject(runLog, path);
         }
 

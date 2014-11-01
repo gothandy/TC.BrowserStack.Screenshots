@@ -8,7 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7CE47E10-D10B-47B8-9AC8-67188D559ADB}"
 	ProjectSection(SolutionItems) = preProject
 		browserstack\screenshots\browsers.json = browserstack\screenshots\browsers.json
-		..\TC.Website\TC.Website.UI.Html\TC.Website.UI.Html\TC.Website.UI.Html.BrowserStack.json = ..\TC.Website\TC.Website.UI.Html\TC.Website.UI.Html\TC.Website.UI.Html.BrowserStack.json
+		browserstack\screenshots\one.json = browserstack\screenshots\one.json
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TC.BrowserStack.Screenshots.Test", "TC.BrowserStack.Screenshots.Test\TC.BrowserStack.Screenshots.Test.csproj", "{E08BBC4A-AFED-44BE-9492-BF770D05B261}"
