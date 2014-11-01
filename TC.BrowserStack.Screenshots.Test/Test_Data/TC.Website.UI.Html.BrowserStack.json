@@ -1,0 +1,42 @@
+﻿{
+    "settings": {
+        "username": "gothandy1",
+        "password": "DsLgSR89wAn9sX5jSU4q",
+        "rooturl": "http://tc-website-ui-html.azurewebsites.net/",
+        "retry_attempts": 10,
+        "retry_wait_minutes":  5
+    },
+
+    "jobs": [
+        { "url": "Pages/Home" },
+        { "url": "Pages/Culture" },
+        { "url": "Pages/Careers" },
+        { "url": "Pages/Blog" },
+        { "url": "Pages/Contact" },
+        { "url": "Components/Clients" },
+        { "url": "Components/CtaCareers" },
+        { "url": "Components/CtaHome" },
+        { "url": "Components/Navigation" },
+        { "url": "Components/TitleImageAsos" },
+        { "url": "Components/TitleImageEasyJet" }
+    ],
+
+    "job_defaults": {
+        "win_res": "1280x1024",
+        "mac_res": "1920x1080",
+        "quality": "compressed",
+        "wait_time": 5,
+        "orientation": "portrait",
+        "browsers": [
+            { "device": null, "os": "Windows", "os_version": "8", "browser": "ie", "browser_version": "10.0 Desktop" },
+            { "device": null, "os": "Windows", "os_version": "XP", "browser": "ie", "browser_version": "6.0" },
+            { "device": null, "os": "Windows", "os_version": "XP", "browser": "ie", "browser_version": "7.0" },
+            { "device": null, "os": "OS X", "os_version": "Lion", "browser": "chrome", "browser_version": "36.0" },
+            { "device": null, "os": "OS X", "os_version": "Mavericks", "browser": "opera", "browser_version": "12.15" },
+            { "device": null, "os": "OS X", "os_version": "Yosemite Beta", "browser": "firefox", "browser_version": "30.0" },
+            { "device": "Samsung Galaxy S3", "os": "android", "os_version": "4.1", "browser": "Android Browser", "browser_version": null  },
+            { "device": "iPhone 5S", "os": "ios", "os_version": "7.0", "browser": "Mobile Safari", "browser_version": null  },
+            { "device": "iPad Mini", "os": "ios", "os_version": "7.0", "browser": "Mobile Safari", "browser_version": null }
+        ]
+    }
+}
