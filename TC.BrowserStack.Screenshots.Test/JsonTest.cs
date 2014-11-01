@@ -55,11 +55,9 @@ namespace TC.BrowserStack.Screenshots.Test
 
             value.screenshots = new ScreenShotModel[1] { ss1 };
 
-            Assert.AreEqual(
-                "{\"callback_url\":null,\"job_id\":null,\"mac_res\":null,\"quality\":null,\"screenshots\":[{\"browser\":null,\"browser_version\":null,\"created_at\":null,\"device\":null,\"id\":\"aaaa\",\"image_url\":null,\"os\":null,\"os_version\":null,\"state\":null,\"thumb_url\":null,\"url\":null}],\"wait_time\":0,\"win_res\":null}",
+            string result = Json.Serialize<JobLogModel>(value);
 
-                Json.Serialize<JobLogModel>(value)
-                );
+            Assert.IsTrue(result.Contains("aaaa"));
         }
     }
 }

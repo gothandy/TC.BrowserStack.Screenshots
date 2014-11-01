@@ -14,7 +14,7 @@ namespace TC.BrowserStack.Screenshots
             this.config = config;
         }
 
-        public void Run()
+        public string Run()
         {
             List<JobLogModel> jobLogs = new List<JobLogModel>();
             
@@ -33,10 +33,10 @@ namespace TC.BrowserStack.Screenshots
                 }
             }
 
-            writeRunLog(jobLogs);
+            return writeRunLog(jobLogs);
         }
 
-        private static void writeRunLog(List<JobLogModel> jobLogs)
+        private static string writeRunLog(List<JobLogModel> jobLogs)
         {
             string path = String.Format(DateTime.UtcNow.ToString("yyyy-MM-dd-HH-mm") + ".json");
 
@@ -46,6 +46,8 @@ namespace TC.BrowserStack.Screenshots
             Console.WriteLine(path);
 
             JsonFile.WriteObject(runLog, path);
+
+            return path;
         }
 
         private JobLogModel generateScreenshots(JobModel job)
@@ -55,7 +57,7 @@ namespace TC.BrowserStack.Screenshots
             int retryCount = 0;
             
 
-            while (retry && retryCount < config.settings.retry_attempts)
+            while (retry && retryCount <= config.settings.retry_attempts)
             {
                 
                 try

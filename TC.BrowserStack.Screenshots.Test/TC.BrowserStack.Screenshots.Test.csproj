@@ -53,6 +53,7 @@
     <Compile Include="ConfigTest.cs" />
     <Compile Include="JsonTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProgramTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TC.BrowserStack.Screenshots\TC.BrowserStack.Screenshots.csproj">
@@ -61,6 +62,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Test_Data\one.json" />
     <None Include="Test_Data\TC.Website.UI.Html.BrowserStack.json" />
   </ItemGroup>
   <Choose>

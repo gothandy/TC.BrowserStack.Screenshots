@@ -1,0 +1,24 @@
+﻿{
+    "settings": {
+        "username": "gothandy1",
+        "password": "DsLgSR89wAn9sX5jSU4q",
+        "rooturl": "http://google.com/",
+        "retry_attempts": 0,
+        "retry_wait_minutes":  1
+    },
+
+    "jobs": [
+        { "url": "doodles" }
+    ],
+
+    "job_defaults": {
+        "win_res": "1280x1024",
+        "mac_res": "1920x1080",
+        "quality": "compressed",
+        "wait_time": 5,
+        "orientation": "portrait",
+        "browsers": [
+            { "device": null, "os": "Windows", "os_version": "8", "browser": "ie", "browser_version": "10.0 Desktop" }
+        ]
+    }
+}

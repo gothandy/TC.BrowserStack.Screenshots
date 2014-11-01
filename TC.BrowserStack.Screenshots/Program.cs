@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace TC.BrowserStack.Screenshots
 {
@@ -15,20 +16,18 @@ namespace TC.BrowserStack.Screenshots
             switch (args[0])
             {
                 case "browsers":
-
                     Browsers.DownloadAndWrite();
                     break;
 
                 case "jobs":
-
                     ConfigModel configModel = JsonFile.ReadObject<ConfigModel>(args[1]);
                     Jobs jobs = new Jobs(configModel);
-                    jobs.Run();
+                    string result = jobs.Run();
                     break;
 
                 case "images":
                     RunLogModel runLog = JsonFile.ReadObject<RunLogModel>(args[1]);
-                    Images images = new Images(runLog, Path.GetFileNameWithoutExtension(args[1]));
+                    Images images = new Images(runLog, args[1]);
                     images.Download();
                     break;
             }

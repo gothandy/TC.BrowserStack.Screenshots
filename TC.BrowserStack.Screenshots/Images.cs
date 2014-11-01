@@ -9,15 +9,15 @@ using System.Threading.Tasks;
 
 namespace TC.BrowserStack.Screenshots
 {
-    class Images
+    public class Images
     {
         private RunLogModel runLog;
         private string folderName;
 
-        public Images(RunLogModel runLog, string folderName)
+        public Images(RunLogModel runLog, string runLogFileName)
         {
             this.runLog = runLog;
-            this.folderName = folderName;
+            this.folderName = Path.GetFileNameWithoutExtension(runLogFileName);
         }
 
         public void Download()
