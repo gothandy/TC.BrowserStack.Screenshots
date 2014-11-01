@@ -26,9 +26,9 @@ namespace TC.BrowserStack.Screenshots
             return value;
         }
 
-        public static void WriteObject(object value, string path)
+        public static void WriteObject<T>(T value, string path)
         {
-            string json = Json.Serialize(value);
+            string json = Json.Serialize<T>(value);
 
             json = formatJson(json);
 

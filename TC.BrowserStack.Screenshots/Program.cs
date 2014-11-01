@@ -4,9 +4,9 @@ namespace TC.BrowserStack.Screenshots
 {
     // Example command line arguments:
     //
-    // brwosers
-    // images 2014-10-31-22-14.json
+    // browsers
     // jobs TC.Website.UI.Html.BrowserStack.json
+    // images 2014-10-31-22-14.json
 
     class Program
     {

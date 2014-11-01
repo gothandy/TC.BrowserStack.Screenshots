@@ -11,7 +11,7 @@ namespace TC.BrowserStack.Screenshots
 
             browsers = JsonWeb.DownloadObject<BrowserModel[]>(browsersJson);
 
-            JsonFile.WriteObject(browsers, Path.GetFileName(browsersJson));
+            JsonFile.WriteObject<BrowserModel[]>(browsers, Path.GetFileName(browsersJson));
         }
     }
 }
