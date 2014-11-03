@@ -1,0 +1,5 @@
+{"jobLogs":[
+	{"job_id":"53877f51013754f447312ffa00ad8ebfd33b2689","quality":"compressed","wait_time":5,"win_res":"1280x1024","mac_res":"1920x1080","callback_url":null,"screenshots":[
+	{"id":"fc58cad5ffcbdb780828fe1089ab910542e39987","state":"pending","url":"http:\/\/google.com\/doodles","device":null,"os":"Windows","os_version":"8","browser":"ie","browser_version":"10.0 Desktop","thumb_url":null,"image_url":null,"created_at":null}
+]}
+]}
